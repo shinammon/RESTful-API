@@ -1,0 +1,23 @@
+<li>
+  <a href="/home/index" data-icon="home" data-theme="b" data-ajax="false"
+    >Home</a
+  >
+</li>
+<% if(userName == "Guest"){ %>
+<li>
+  <a href="/member/login" data-icon="star" data-theme="b" data-ajax="false"
+    >Login</a
+  >
+</li>
+<% } else { %>
+<li>
+  <a href="/member/logout" data-icon="star" data-theme="b" data-ajax="false"
+    >Logout</a
+  >
+</li>
+<% } %>
+<li>
+  <a href="/member/secret" data-icon="gear" data-theme="b" data-ajax="false"
+    >MemberOnly</a
+  >
+</li>

@@ -1,0 +1,13 @@
+create database tododb;
+
+use tododb;
+
+create table todoTable(
+    todoTableId int auto_increment primary key,
+    title varchar(30),
+    isComplete boolean
+)
+
+insert into todoTable (title,isComplete) values ("job A",1);
+insert into todoTable (title,isComplete) values ("job B",0);
+insert into todoTable (title,isComplete) values ("job C",1);
